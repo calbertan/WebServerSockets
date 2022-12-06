@@ -1,5 +1,6 @@
 import socket
 import threading
+import time
 
 server_port = 8000
 server_host = socket.gethostbyname(socket.gethostname())
@@ -14,7 +15,6 @@ def handle_client(client, address):
     print(f"{address} [CONNECTED]")
     global prev
     connected = True
-    
     while connected:
         message = client.recv(1024).decode()
         
