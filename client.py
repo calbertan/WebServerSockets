@@ -17,8 +17,8 @@ while True:
       break
 
 # Send the client request
-# request = "GET /test.html HTTP/1.1 \r\n"
-# client_socket.send(request.encode())
+request = "GET /test.html HTTP/1.1 \r\n"
+client_socket.send(request.encode())
 
 
 # FOR 400 BAD REQUEST
